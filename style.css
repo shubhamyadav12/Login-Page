@@ -8,7 +8,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-#myVideo {
+/* #myVideo {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -17,7 +17,7 @@
     object-fit: contain;
     filter: brightness(0.9);
     -webkit-filter: brightness(0.8);
-}
+} */
 
 section{
     display: flex;
@@ -25,7 +25,9 @@ section{
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    /* background: url(assests/bgc\ video.mp4); */
+    background: url(assests/island-7860885.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .formbox{
@@ -132,6 +134,9 @@ button{
    -ms-border-radius: 40px;
    -o-border-radius: 40px;
 }
+button:hover{
+    transform: scale(.9);
+}
 
 .register{
     font-size: .9em;
@@ -147,4 +152,22 @@ button{
 
 .register p a:hover{
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for screens less than or equal to 600px wide */
+    section {
+        background-size: cover;
+    }
+    .formbox {
+        width: 350px;
+        height: 400px;
+    }
+    .inputbox,
+    button {
+        width: 100%;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
 }
